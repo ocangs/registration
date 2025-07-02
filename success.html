@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konfirmasi Pengiriman Data</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f2f5;
+        color: #333;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      .container {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        max-width: 500px;
+        width: 100%;
+      }
+      h1 {
+        color: #28a745; /* Warna hijau untuk sukses */
+        margin-bottom: 20px;
+        font-size: 2.5em;
+      }
+      p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        margin-bottom: 30px;
+      }
+      .back-button {
+        background-color: #007bff; /* Warna biru untuk tombol */
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        text-decoration: none; /* Hapus underline jika menggunakan <a> */
+        transition: background-color 0.3s ease;
+      }
+      .back-button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Data Berhasil Disimpan!</h1>
+      <p>
+        Terima kasih. Data Anda telah berhasil dikirim dan disimpan ke Google
+        Spreadsheet.
+      </p>
+      <button class="back-button" onclick="window.history.back()">
+        Kembali ke Formulir
+      </button>
+      <!-- Atau, jika Anda ingin mengarahkan ke halaman spesifik: -->
+      <!-- <a href="index.html" class="back-button">Kembali ke Formulir</a> -->
+    </div>
+  </body>
+</html>
